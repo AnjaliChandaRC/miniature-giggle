@@ -8,46 +8,11 @@
   font-family: "Rubik", sans-serif;
 }
 
-.max-w-1140 {
-  max-width: 1140px;
-}
-
-.text-xxl {
-  font-size: 28px;
-}
-
-.text-green {
-  color: #48bf91;
-}
-.bg-green {
-  background-color: #48bf91;
-}
-.leading-45 {
-  line-height: 45px;
-}
-.header-border {
-  border-bottom: 1px solid #ffffff33;
-}
-.max-w-894 {
-  max-width: 894px;
-}
 .footer-bg-image {
-  background-image: url("../../src/images/footer-bg.webp");
+  background-image: url("../images/footer-bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-}
-
-.footer-bottom-border {
-  border-top: 1px solid #ffffff80;
-}
-.circle {
-  width: 30px;
-  height: 30px;
-}
-
-.blue-blur {
-  position: relative;
 }
 
 .blue-blur::before {
