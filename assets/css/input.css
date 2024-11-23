@@ -10,9 +10,6 @@
 
 .footer-bg-image {
   background-image: url("../images/footer-bg.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 }
 
 .blue-blur::before {
