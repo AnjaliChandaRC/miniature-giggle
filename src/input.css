@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+
+*{
+    font-family: "Rubik", sans-serif;
+}
+.text-xxl{
+    font-size: 28px;
+}
+.leading-xl{
+    line-height: 45px;
+}
+.text-green{
+    color: #48bf91;
+}
+.bg-green{
+    background-color: #48bf91;
+}
+
+.max-w-1140{
+    max-width: 1140px;
+}
