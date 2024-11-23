@@ -2,24 +2,61 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap");
 
-*{
-    font-family: "Rubik", sans-serif;
-}
-.text-xxl{
-    font-size: 28px;
-}
-.leading-xl{
-    line-height: 45px;
-}
-.text-green{
-    color: #48bf91;
-}
-.bg-green{
-    background-color: #48bf91;
+* {
+  font-family: "Rubik", sans-serif;
 }
 
-.max-w-1140{
-    max-width: 1140px;
+.max-w-1140 {
+  max-width: 1140px;
+}
+
+.text-xxl {
+  font-size: 28px;
+}
+
+.text-green {
+  color: #48bf91;
+}
+
+.leading-45 {
+  line-height: 45px;
+}
+.header-border {
+  border-bottom: 1px solid #ffffff33;
+}
+.max-w-894 {
+  max-width: 894px;
+}
+.footer-bg-image {
+  background-image: url("../../src/images/footer-bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.footer-bottom-border {
+  border-top: 1px solid #ffffff80;
+}
+.circle {
+  width: 30px;
+  height: 30px;
+}
+
+.blue-blur {
+  position: relative;
+}
+
+.blue-blur::before {
+  content: "";
+  position: absolute;
+  top: -120px;
+  right: -150px;
+  width: 384px;
+  height: 384px;
+  background: linear-gradient(133.98deg, #0076be 11.95%, #95d8eb 100%);
+  filter: blur(220px);
+  z-index: 1;
+  pointer-events: none;
 }
