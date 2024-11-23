@@ -19,7 +19,9 @@
 .text-green {
   color: #48bf91;
 }
-
+.bg-green {
+  background-color: #48bf91;
+}
 .leading-45 {
   line-height: 45px;
 }
