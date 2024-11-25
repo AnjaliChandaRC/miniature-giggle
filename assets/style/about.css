@@ -1,0 +1,220 @@
+.about_content_box {
+  max-width: 745px;
+}
+
+
+.custom_line_hight {
+  line-height: 40px;
+}
+
+.custom_letter_spacing {
+  letter-spacing: 1px !important;
+}
+
+.blue_line {
+  background: linear-gradient(136.39deg, #0076be 3.65%, #48bf91 89.63%);
+  height: 100%;
+  width: 3px;
+  position: absolute;
+  left: -24px;
+  border-radius: 7px;
+}
+
+.custom_light_black {
+  color: rgba(0, 0, 0, 1);
+}
+
+.shadow_position_image {
+    left: -64px;
+    z-index: -1;
+    height: 450px;
+    width: 500px;
+    top: -30px;
+}
+
+.shadow3_position_image {
+  left: -100px;
+  z-index: -1;
+  height: 435px;
+  width: 455px;
+  top: -55px;
+}
+
+.shadow1_position_image {
+  left: -80px;
+  z-index: -1;
+  height: 432px;
+  width: 413px;
+  top: 19px;
+}
+
+.custom_heading_lh {
+  line-height: 33px;
+}
+
+.custom_lh {
+  line-height: 30px;
+}
+
+.shadow_position {
+  background: linear-gradient(140.69deg, #48bf91 11.98%, #8bd9c7 83.25%);
+  width: 300px;
+  opacity: 0.3;
+  filter: blur(50px);
+  height: 384px;
+  left: -40px;
+  top: 0;
+  z-index: -1;
+  position: absolute;
+}
+
+.shadow_position1 {
+  position: absolute;
+  background: linear-gradient(140.69deg, #48bf91 11.98%, #8bd9c7 83.25%);
+  width: 300px;
+  opacity: 0.3;
+  filter: blur(50px);
+  height: 384px;
+  left: -40px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.shadow_position2 {
+  position: absolute;
+  background: linear-gradient(140.69deg, #48bf91 11.98%, #8bd9c7 83.25%);
+  width: 300px;
+  opacity: 0.3;
+  filter: blur(50px);
+  height: 384px;
+  right: -40px;
+  bottom: -100px;
+  z-index: -1;
+}
+.contact_us_shade {
+  right: 0px;
+  top: -155px !important;
+  z-index: -1;
+}
+
+.faq_bottom_shade {
+  bottom: -31px !important;
+}
+.about_phone1_custom_class{
+    min-height: 350px;
+}
+
+@media (min-width: 1200px) {
+  .about_mobile_image_padding_left {
+    padding-left: 58px !important;
+  }
+
+  .about_mobile_image_padding_right {
+    padding-right: 58px !important;
+  }
+}
+
+@media (min-width: 1400px) {
+  .about_custom_container {
+    max-width: 1140px !important;
+    margin: 0 auto !important;
+    padding: 0 12px !important;
+  }
+}
+
+@media (max-width: 1200px) {
+  .custom_text_maxW {
+    max-width: 745px !important;
+  }
+
+  .shadow3_position_image {
+    left: -100px;
+    height: 435px;
+    width: 455px;
+    top: 0px;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .custom_padding_left {
+    padding-left: 12px !important;
+  }
+
+.about_phone1_custom_class{
+    min-height: 200px;
+}
+}
+
+@media (max-width: 575.98px) {
+  .shadow_position_image {
+    left: -27px;
+    height: 392px;
+    width: 355px;
+  }
+
+  .shadow1_position_image {
+    left: -40px;
+    height: 400px;
+    width: 355px;
+    top: 0px;
+}
+
+  .shadow3_position_image {
+    left: -30px;
+    height: 435px;
+    width: 355px;
+    top: -37px;
+}
+
+  .custom_line_hight {
+    line-height: 30px;
+  }
+  .shadow_position_image {
+    left: -21px;
+    height: 400px;
+    width: 350px;
+    top: -19px;
+}
+}
+
+@media (max-width: 991.98px) {
+  .about_phone_custom_class {
+    max-width: 300px !important;
+    max-height: 340px !important;
+  }
+
+  .about_phone1_custom_class {
+    max-width: 300px !important;
+    max-height: 360px !important;
+  }
+
+  .about_phone3_custom_class {
+    max-width: 298px !important;
+    max-height: 340px !important;
+  }
+
+  .custom_heading_lh {
+    line-height: 28px;
+  }
+
+  .custom_lh {
+    line-height: 25px;
+  }
+
+  .about_custom_hight {
+    height: unset !important;
+  }
+  .shadow_position_image {
+    left: -64px;
+    height: 400px;
+    width: 400px;
+    top: -30px;
+}
+.shadow3_position_image {
+    height: 350px;}
+    
+
+.shadow1_position_image {
+    height: 400px;
+}
+}
