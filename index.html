@@ -33,6 +33,8 @@
       theme: {
         extend: {
           screens: {
+            lg: '1025px',
+            xmd: '925px',
             md: '770px',
             xsm: '425px',
           }
@@ -43,7 +45,7 @@
 
 </head>
 
-<body>
+<body class="bg-black">
   <!-- =======================section-1=========================== -->
 
   <section class="bg-black flex flex-col blue-blur relative overflow-hidden">
@@ -67,8 +69,8 @@
 
 
       <div
-        class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] mb-32 max-lg:mb-20 max-md:mb-12 max-sm:mb-10 max-w-max mx-auto">
-        <div class="w-full bg-black opacity-95 py-[34px] pl-[19px] lg:pr-[90px] max-sm:py-5 max-sm:px-4 rounded-2xl">
+        class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden xl:px-[3px] px-[2px] mb-32 max-lg:mb-20 max-md:mb-12 max-sm:mb-10 max-w-max mx-auto">
+        <div class="w-full bg-black opacity-95 py-[34px] pl-[19px] lg:pr-[92px] max-sm:py-5 max-sm:px-4 rounded-2xl">
           <p
             class="max-w-[531px] font-medium text-xl leading-[30px] text-white pb-[30px] max-md:text-lg max-sm:text-base max-md:pb-5 max-sm:pb-3">
             On the form, please list your
@@ -80,20 +82,24 @@
           <p class="text-xl max-sm:text-base text-white leading-[30px] max-md:text-lg">Lake Forest CA, 92630</p>
         </div>
       </div>
+    </div>
+  </section>
 
-      <!-- -------------------------------------------banners--------------------------------------------------- -->
-
+  <!-- -------------------------------------------banners-section--------------------------------------------------- -->
+  <section class="bg-black flex flex-col">
+    <div class="max-w-[1140px] mx-auto px-4">
       <div class="flex flex-wrap -mx-3 pb-28 max-md:pb-12 max-sm:pb-10">
-        <div class="w-full md:w-1/2 px-3">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-full xmd:w-1/2 px-3">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg ">Alabama
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm ">Alabama
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=District+of+Columbia.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=l974nwmp&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -103,8 +109,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/District-of-Columbia.pdf" download
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -115,16 +122,17 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/2 px-3 max-md:pt-8 max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-full xmd:w-1/2 px-3 max-xmd:pt-8 max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91]  2xl:px-[3px] rounded-2xl overflow-hidden px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg ">Alaska
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm ">Alaska
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=4&preview=Alaska.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=kykpbhy5&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -134,8 +142,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Alaska.pdf" download
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -146,16 +155,17 @@
             </div>
           </div>
         </div>
-        <div class="w-full md:w-1/2 px-3 pt-8 max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-full xmd:w-1/2 px-3 pt-8 max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Arizona
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Arizona
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Arizona.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=dntg876j&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -165,8 +175,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Arizona.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -177,16 +188,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Arkansas
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Arkansas
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Arkansas.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=0ud7zyd0&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -196,8 +208,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Arkansas.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -208,16 +221,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">California
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">California
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=California.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=n7ukyr39&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -227,8 +241,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/California.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -239,16 +254,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Colorado
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Colorado
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Colorado.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=kcsdzp26&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -258,8 +274,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Colorado.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -270,17 +287,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">
                   Connecticut
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Connecticut.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=6jrlgshn&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -290,8 +308,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Connecticut.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -302,16 +321,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Delware
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Delware
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Delaware.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=lg859wny&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -321,8 +341,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Delaware.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -333,16 +354,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Florida
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Florida
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Florida.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=jw6djqwq&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -352,8 +374,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Florida.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -364,16 +387,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Georgia
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Georgia
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Georgia.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=d2tojiaq&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -383,8 +407,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Georgia.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -395,16 +420,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Hawaii
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Hawaii
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Hawaii.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=be17h7t6&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -414,8 +440,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Hawaii.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -426,15 +453,16 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Idaho</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Idaho</h2>
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Idaho.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=bmkqqsp6&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -444,8 +472,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Idaho.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -456,16 +485,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Illinois
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Illinois
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Illinois.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=svfq6al1&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -475,8 +505,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Illinois.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -487,16 +518,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Indiana
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Indiana
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Indiana.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=yixxdemb&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -506,8 +538,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Indiana.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -518,15 +551,16 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Lowa</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Lowa</h2>
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Iowa.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=5lze0oum&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -536,8 +570,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Iowa.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -548,16 +583,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Kansas
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Kansas
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Kansas.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=1e65txyn&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -567,8 +603,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Kansas.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -579,16 +616,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Kentucky
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Kentucky
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Kentucky.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=h0iljqpm&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -598,8 +636,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Kentucky.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -610,16 +649,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Louisiana
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Louisiana
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Louisiana.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=samxqbqj&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -629,8 +669,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Louisiana.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -641,15 +682,16 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Maine</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Maine</h2>
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Maine.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=389ugh3j&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -659,8 +701,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Maine.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -671,16 +714,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Maryland
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Maryland
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Maryland.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=kmjweyco&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -690,8 +734,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Maryland.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -702,17 +747,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">
                   Massachusetts
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Massachusettes.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=p3ioigoe&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -722,8 +768,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Massachusettes.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -734,16 +781,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Michigan
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Michigan
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Michigan.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=tjfjuwm9&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -753,8 +801,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Michigan.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -765,16 +814,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Minnesota
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Minnesota
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Minnesota.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=34z6xddc&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -784,8 +834,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Minnesota.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -796,17 +847,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">
                   Mississippi
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Mississippi.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=qk6snr3k&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -816,8 +868,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Mississippi.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -828,16 +881,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Missouri
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Missouri
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Missouri.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=olyc0t56&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -847,8 +901,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Missouri.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -859,16 +914,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Montana
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Montana
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Montana.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=a6zenz38&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -878,8 +934,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Montana.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -890,16 +947,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Nebraska
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Nebraska
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Nebraska.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=odcecom2&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -909,8 +967,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Nebraska.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -921,16 +980,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Nevada
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Nevada
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Nevada.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=8n5b8gvv&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -940,8 +1000,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Nevada.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -952,17 +1013,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">New
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">New
                   Hampshire
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=New+Hampshire.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=j5rti67p&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -972,8 +1034,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/New-Hampshire.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -984,16 +1047,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">New Jersey
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">New Jersey
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=New+Jersey.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=aiaejlmf&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1003,8 +1067,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/New-Jersey.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1015,16 +1080,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">New Mexico
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">New Mexico
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=New+Mexico.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=jf9rd700&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1034,8 +1100,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/New-Mexico.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1046,16 +1113,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">New York
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">New York
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=New+York.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=wysvxaff&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1065,8 +1133,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/New-York.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1077,16 +1146,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">North
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">North
                   Carolina</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=North-Carolina.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=rh1zg5hx&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1096,8 +1166,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/North-Carolina.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1108,17 +1179,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">North
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">North
                   Dakota
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=North-Dakota.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=5khm0ykd&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1128,8 +1200,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/North-Dakota.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1140,15 +1213,16 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Ohio</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Ohio</h2>
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Ohio.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=3mw5dfks&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1158,8 +1232,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Ohio.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1170,16 +1245,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Oklahoma
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Oklahoma
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Oklahoma.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=ezrfdvq5&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1189,8 +1265,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Oklahoma.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1201,16 +1278,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Oregon
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Oregon
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Oregon.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=j45sggkb&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1220,8 +1298,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Oregon.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1232,17 +1311,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">
                   Pennsylvania
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Pennsylvania.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=g8yyk2rs&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1252,8 +1332,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Pennsylvania.pdf"
-                    class="flex gap-2 text-nowrap text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-nowrap text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1264,17 +1345,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Rhode
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Rhode
                   Island
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Rhode+Island.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=2wvnzgnf&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1284,8 +1366,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Rhode-Island.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1296,16 +1379,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">South
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">South
                   Carolina</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=South+Carolina.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=7odbqjfr&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1315,8 +1399,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/South-Carolina.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1327,17 +1412,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">South
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">South
                   Dakota
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=South+Dakota.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=1xhq3cge&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1347,8 +1433,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/South-Dakota.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1359,16 +1446,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Tennessee
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Tennessee
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Tennessee.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=yrxzrbwn&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1378,8 +1466,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Tennessee.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1390,15 +1479,16 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Texas</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Texas</h2>
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Texas.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=pat2s44k&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1408,8 +1498,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Texas.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1420,15 +1511,16 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Utah</h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Utah</h2>
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Utah.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=nydpt47s&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1438,8 +1530,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Utah.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1450,16 +1543,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Vermont
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Vermont
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Vermont.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=8lykfekl&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1469,8 +1563,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Vermont.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1481,16 +1576,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Virgina
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Virgina
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Virginia.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=wne554sn&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1500,8 +1596,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Virginia.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1512,16 +1609,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Washington
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Washington
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Washington.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=dglwwp1s&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1531,8 +1629,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Washington.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1543,17 +1642,18 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">West
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">West
                   Virginia
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=West+Virginia.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=3e3yh6ii&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1563,8 +1663,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/West-Virginia.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1575,16 +1676,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden 2xl:pl-[3px] px-[2px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Wisconsin
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Wisconsin
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Wisconsin.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=46tbo9mf&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1594,8 +1696,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Wisconsin.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1606,16 +1709,17 @@
             </div>
           </div>
         </div>
-        <div class="w-1/2 px-3 pt-8 max-md:w-full max-sm:pt-6">
-          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px]">
-            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 rounded-2xl">
+        <div class="w-1/2 px-3 pt-8 max-xmd:w-full max-sm:pt-6">
+          <div class="bg-gradient-to-br from-[#0076BE] to-[#48bf91] rounded-2xl overflow-hidden px-[2px] 2xl:px-[3px]">
+            <div class="w-full bg-black opacity-95 p-5 max-md:p-4 max-xsm:px-2 rounded-2xl">
               <div class="flex items-center justify-between">
-                <h2 class="font-medium text-[28px] text-white max-md:text-2xl max-sm:text-xl max-xsm:text-lg">Wyoming
+                <h2 class="font-medium text-[28px] text-white max-lg:text-2xl max-sm:text-xl max-xsm:text-sm">Wyoming
                 </h2>
-                <div class="flex items-center gap-8 max-sm:gap-4 ">
+                <div class="flex items-center gap-8 max-lg:gap-4 max-xsm:gap-2 ">
                   <a href="https://www.dropbox.com/scl/fo/h9ramin9uvii5mfj33gt5/AHRovpeWp9smolOc-olaMpg?e=5&preview=Wyoming.pdf&rlkey=qmy15aa5pzsoshr8n7za5c9hi&st=n5mnrchz&dl=0"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-4 max-xsm:h-4" width="18" height="18" viewBox="0 0 18 18" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M17.4035 8.80875C16.7419 7.09743 15.5934 5.61747 14.0998 4.5518C12.6063 3.48612 10.8332 2.88145 8.99976 2.8125C7.1663 2.88145 5.39323 3.48612 3.89969 4.5518C2.40614 5.61747 1.2576 7.09743 0.596011 8.80875C0.55133 8.93234 0.55133 9.06766 0.596011 9.19125C1.2576 10.9026 2.40614 12.3825 3.89969 13.4482C5.39323 14.5139 7.1663 15.1186 8.99976 15.1875C10.8332 15.1186 12.6063 14.5139 14.0998 13.4482C15.5934 12.3825 16.7419 10.9026 17.4035 9.19125C17.4482 9.06766 17.4482 8.93234 17.4035 8.80875ZM8.99976 14.0625C6.01851 14.0625 2.86851 11.8519 1.72664 9C2.86851 6.14812 6.01851 3.9375 8.99976 3.9375C11.981 3.9375 15.131 6.14812 16.2729 9C15.131 11.8519 11.981 14.0625 8.99976 14.0625Z"
                         fill="white" />
@@ -1625,8 +1729,9 @@
                     </svg> View
                   </a>
                   <a href="/assets/pdf/Wyoming.pdf"
-                    class="flex gap-2 text-base max-sm:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
-                    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    class="flex gap-2 text-base max-lg:gap-1 max-sm:text-sm max-xsm:text-[12px] text-white items-center group hover:text-[#48bf91] transition-all duration-300">
+                    <svg class="max-xsm:w-3 max-xsm:h-3" width="16" height="16" viewBox="0 0 16 16" fill="none"
+                      xmlns="http://www.w3.org/2000/svg">
                       <path class="group-hover:fill-green-300 transition-all duration-300 "
                         d="M8 12L3 7L4.4 5.55L7 8.15V0H9V8.15L11.6 5.55L13 7L8 12ZM0 16V11H2V14H14V11H16V16H0Z"
                         fill="white" />
@@ -1641,9 +1746,12 @@
     </div>
   </section>
 
+
+
   <!-- ===============================Footer====================== -->
 
-  <footer class="footer-bg-image bg-no-repeat bg-center bg-cover bg-[#48bf91] pt-16 max-md:pt-12 overflow-hidden max-sm:pt-10">
+  <footer
+    class="footer-bg-image bg-no-repeat bg-center bg-cover bg-[#48bf91] pt-16 max-md:pt-12 overflow-hidden max-sm:pt-10">
     <div class="max-w-[1140px] mx-auto px-4 ">
       <div class="flex flex-wrap flex-row -mx-4 justify-between pb-16 max-sm:pb-10">
         <div class="w-full lg:w-4/12 px-4">
@@ -1709,7 +1817,7 @@
     <div class="border-t border-[#ffffff80] py-[18px] max-sm:py-3">
       <div
         class="max-w-[1140px] mx-auto px-4 flex  items-center justify-between max-sm:items-start max-sm:flex-col max-sm:gap-2">
-        <p class="text-white text-base opacity-70 font-normal">Copyright Â© <span id="current-year"></span> ScalMobile
+        <p class="text-white text-base opacity-70 font-normal">Copyright © <span id="current-year"></span> ScalMobile
         </p>
         <div class="flex items-center gap-[15px]">
           <a href="https://en-gb.facebook.com/login.php/" target="_blank"
