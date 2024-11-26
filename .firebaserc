@@ -1,6 +1,5 @@
 {
   "projects": {
-    "default": "scal-mobile-1122",
-    "cleanUrls": true
+    "default": "scal-mobile-1122"
   }
 }
