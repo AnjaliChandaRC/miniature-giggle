@@ -24,3 +24,26 @@
   z-index: 1;
   pointer-events: none;
 }
+
+.green-blur::before{
+   content: "";
+  position: absolute;
+  top: 950px;
+  left: -268px;
+  width: 384px;
+  height: 384px;
+  background: linear-gradient(140.69deg, #48BF91 11.98%, #8BD9C7 83.25%);
+  filter: blur(220px);
+  z-index: 1;
+  pointer-events: none;
+  opacity: 70%;
+}
+
+@media (max-width:1024px){
+  .blue-blur::before{
+    display: none;
+  }
+  .green-blur::before{
+    display: none;
+  }
+}
